@@ -17,7 +17,6 @@ public class Mediator : IMediator
         var requestHandler = scope.ServiceProvider.GetRequiredService<IRequestHandler<TRequest, TResponse>>();
         var middlewareList = scope.ServiceProvider.GetRequiredService<IEnumerable<IMiddleware>>();
 
-
         var result = await middlewareList
             .Reverse()
             .Aggregate(

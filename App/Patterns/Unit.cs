@@ -1,5 +1,3 @@
 namespace App.Patterns;
 
-public class Unit
-{
-}
+public class Unit;

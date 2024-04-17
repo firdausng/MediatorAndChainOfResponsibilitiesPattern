@@ -1,6 +1,3 @@
 namespace App.Patterns;
 
-public interface IRequest
-{
-    
-}
+public interface IRequest;
